@@ -4,7 +4,7 @@ RCS := nethack-343.rc nethack-343nao.rc nethack-362.rc
 .PHONY: all clean
 all: $(GENERATED_PARTS) $(RCS)
 clean:
-	rm -f $(RCS)
+	rm -f $(GENERATED_PARTS) $(RCS)
 
 parts/C-autopickup.6.g:
 	sed 's/\*/.*/g' parts/C-autopickup.45 > $@
