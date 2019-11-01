@@ -7,8 +7,11 @@ all: $(GENERATED_PARTS) $(RCS)
 clean:
 	rm -f $(GENERATED_PARTS) $(RCS)
 
+# NetHack 3.6.2 uses regex for autopickup exceptions and MSGTYPE.
+# Our 3.4.3-nao files use glob syntax (? and *).
+# We generate the 3.6.2 files from the 3.4.3-nao files:
 parts/C-autopickup.6.g:
-	sed '2,$$s/\./\\./g;s/\*/.*/g' parts/C-autopickup.45 > $@
+	sed '2,$$s/\./\\./g;s/\*/.*/g' parts/C-autopickup.5 > $@
 
 parts/E-msgtype.6.g:
 	sed '2,$$s/\./\\./g;s/\*/.*/g' parts/E-msgtype.5 > $@
