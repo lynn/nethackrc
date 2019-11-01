@@ -1,8 +1,8 @@
 # MSGTYPE options.
-MSGTYPE=hide "You displaced *"
-MSGTYPE=stop "You are slowing down."
-MSGTYPE=stop "You find it hard to breathe."
-MSGTYPE=stop "You are turning a little *"
+MSGTYPE=hide "You displaced .*"
+MSGTYPE=stop "You are slowing down\."
+MSGTYPE=stop "You find it hard to breathe\."
+MSGTYPE=stop "You are turning a little .*"
 MSGTYPE=stop "It constricts your throat!"
 MSGTYPE=stop "You find it hard to breathe\."
 MSGTYPE=stop "Your .* is becoming constricted\."

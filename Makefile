@@ -1,4 +1,5 @@
-GENERATED_PARTS := parts/C-autopickup.6.g
+PARTS := parts/*
+GENERATED_PARTS := parts/C-autopickup.6.g parts/E-msgtype.6.g
 RCS := nethack-343.rc nethack-343nao.rc nethack-362.rc
 
 .PHONY: all clean
@@ -7,7 +8,10 @@ clean:
 	rm -f $(GENERATED_PARTS) $(RCS)
 
 parts/C-autopickup.6.g:
-	sed 's/\*/.*/g' parts/C-autopickup.45 > $@
+	sed '2,$$s/\./\\./g;s/\*/.*/g' parts/C-autopickup.45 > $@
+
+parts/E-msgtype.6.g:
+	sed '2,$$s/\./\\./g;s/\*/.*/g' parts/E-msgtype.5 > $@
 
 nethack-343.rc: $(PARTS)
 	cat parts/*4* > $@
