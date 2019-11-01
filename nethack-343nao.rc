@@ -1,0 +1,277 @@
+# This .nethackrc file lives at: https://github.com/lynn/nethackrc
+
+# Options for both NetHack 3.4.3 and 3.6.2.
+OPTIONS=autodig
+#OPTIONS=autopickup (See autopickup section)
+OPTIONS=!autoquiver
+OPTIONS=boulder:0
+OPTIONS=!cmdassist
+#OPTIONS=DECgraphics
+OPTIONS=color
+OPTIONS=disclose:yi ya nv ng yc
+OPTIONS=fixinv
+OPTIONS=fruit:avocado
+OPTIONS=!help
+OPTIONS=hilite_pet
+#OPTIONS=IBMgraphics
+OPTIONS=!legacy
+OPTIONS=lit_corridor
+OPTIONS=mail
+OPTIONS=msghistory:100
+OPTIONS=msg_window:reversed
+OPTIONS=number_pad:0
+OPTIONS=pickup_burden:U
+#OPTIONS=pickup_types (See autopickup section)
+OPTIONS=runmode:teleport
+OPTIONS=showexp
+OPTIONS=showrace
+OPTIONS=showscore
+OPTIONS=!sparkle
+OPTIONS=suppress_alert:3.4.3
+OPTIONS=time
+OPTIONS=!tombstone
+
+# Autopickup and exceptions.
+OPTIONS=autopickup,pickup_types:$"!?/=
+AUTOPICKUP_EXCEPTION="<*magic lamp*"
+AUTOPICKUP_EXCEPTION="<*magic marker*"
+AUTOPICKUP_EXCEPTION="<*wishing*"
+AUTOPICKUP_EXCEPTION="<*silver bell*"
+AUTOPICKUP_EXCEPTION="<*Bell of Opening*"
+AUTOPICKUP_EXCEPTION="<*andelabrum*"
+AUTOPICKUP_EXCEPTION="<*Book of the Dead"
+AUTOPICKUP_EXCEPTION="<*papyrus spellbook"
+
+# Visual options.
+OPTIONS=UTF8graphics
+OPTIONS=monsters:abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTQVWXYZ@6U&;:~m
+MONSTERCOLOR=floating eye:yellow
+MONSTERCOLOR=mind flayer:lightmagenta
+MONSTERCOLOR=master mind flayer:lightmagenta
+MONSTERCOLOR=Elvenking:lightmagenta
+
+# Maud's menucolors.
+OPTIONS=menucolors
+
+# Blessed, cursed, enchanted
+MENUCOLOR=" blessed"=cyan
+MENUCOLOR=" \+[1-9]"=lightcyan
+MENUCOLOR=" \-[1-9]"=orange
+MENUCOLOR=" cursed"=red
+
+# Un-ID'd
+MENUCOLOR=" (amulet|ring$|potion|scroll|spellbook|wand|gem|tin$|tins$|bag)"=lightblue
+MENUCOLOR=" (amulet|ring|potion|scroll|spellbook|wand|gem|tin|bag)s? (of|called|versus)"=gray
+MENUCOLOR=" cursed.* (tin|bag)"=red
+MENUCOLOR=" small bag"=gray
+MENUCOLOR=" called .+ or "=lightblue
+MENUCOLOR=" called .*\?"=lightblue
+MENUCOLOR=" gray stone"=lightblue&underline
+MENUCOLOR=" (piece of cloth|opera cloak|ornamental cope|tattered cape|conical hat)"=lightblue
+MENUCOLOR=" (plumed|etched|crested|visored) helmet"=lightblue
+#MENUCOLOR=" (old|padded|riding|fencing) gloves"=lightblue
+MENUCOLOR=" (mud|buckled|riding|snow|hiking|combat|jungle) boots"=lightblue
+MENUCOLOR=" (piece of cloth|opera cloak|ornamental cope|tattered cape|conical hat)"=lightblue
+
+# Armor
+MENUCOLOR=" dragon scale"=lightmagenta
+MENUCOLOR=" (gloves|gauntlets|yugake)"=lightgreen
+MENUCOLOR=" cursed.* (gloves|gauntlets|yugake)"=lightgreen&underline
+MENUCOLOR=" (levitation boots|boots called lev)"=green
+MENUCOLOR=" helm.* opposite"=lightcyan
+MENUCOLOR=" (gauntlets|gloves|boots) .* fumbl"=orange
+MENUCOLOR=" fumble boots"=orange
+MENUCOLOR=" dunce cap"=orange&underline
+
+# Tools
+MENUCOLOR=" (magic lamp|lamp called magic)"=magenta
+MENUCOLOR=" blessed (magic lamp|lamp called magic)"=lightmagenta
+MENUCOLOR=" magic marker"=lightmagenta
+MENUCOLOR=" (blessed|cursed) magic marker"=lightmagenta&underline
+MENUCOLOR=" magic marker.* \(1:[0-3]\)"=brown
+
+MENUCOLOR=" unicorn horn[^[]*$"=lightgreen
+MENUCOLOR=" cursed.* unicorn horn"=lightgreen&underline
+MENUCOLOR=" (blindfold|towel)"=lightgreen
+MENUCOLOR=" cursed.* (blindfold|towel)"=lightgreen&underline
+MENUCOLOR=" stethoscope"=lightgreen
+MENUCOLOR=" cursed.* stethoscope"=lightgreen&underline
+
+MENUCOLOR=" pick-axe[^[]*$"=green
+MENUCOLOR=" cursed.* pick-axe"=green&underline
+MENUCOLOR=" (key|lock pick|osaku)"=green
+MENUCOLOR=" can of grease"=green
+MENUCOLOR=" cursed.* can of grease"=green&underline
+
+MENUCOLOR=" (oilskin|sack)"=lightcyan
+MENUCOLOR=" tinning kit"=lightcyan
+MENUCOLOR=" cursed.* tinning kit"=lightcyan&underline
+MENUCOLOR=" (magic whistle|whistle called magic)"=lightcyan
+MENUCOLOR=" tin whistle"=brown
+MENUCOLOR=" called tin"=brown
+MENUCOLOR=" tin opener"=brown
+
+# Foodstuffs
+MENUCOLOR=" lumps? of royal jelly"=lightmagenta
+MENUCOLOR=" tins? of (spinach|.*giant meat)"=lightmagenta
+MENUCOLOR=" lizard corpse"=lightgreen
+MENUCOLOR=" (food |K-|C-|cram )ration"=green
+MENUCOLOR=" (gunyoki|lembas wafer)"=green
+MENUCOLOR=" tripe ration"=lightcyan
+
+#MENUCOLOR=" fortune cookie"=yellow
+MENUCOLOR=" c(hi|o)ckatrice corpse"=yellow
+MENUCOLOR=" tins? of c(hi|o)ckatrice"=yellow
+MENUCOLOR=" cockatrice egg"=yellow
+
+MENUCOLOR=" (slime mold|candied|cookie)"=green
+
+# Amulets
+MENUCOLOR=" amulet .* life saving"=lightgreen
+MENUCOLOR=" cursed amulet .* life saving"=lightgreen&underline
+MENUCOLOR=" amulet .* reflect"=lightgreen
+MENUCOLOR=" amulet .* ESP"=lightcyan
+MENUCOLOR=" amulet .* (strang|sleep|change)"=orange
+
+# Rings
+MENUCOLOR=" ring .* free action"=lightgreen
+MENUCOLOR=" ring .* slow digest"=green
+MENUCOLOR=" ring .* conflict"=green
+MENUCOLOR=" ring .* levitation"=green
+MENUCOLOR=" ring .* teleport control"=green
+MENUCOLOR=" ring .* regeneration"=green
+MENUCOLOR=" ring .* polymorph"=lightcyan
+MENUCOLOR=" ring .* polymorph control"=lightcyan
+
+# Wands
+MENUCOLOR=" wand (of|called) (wish|death|poly)"=lightmagenta
+MENUCOLOR=" wand (of|called) (teleport|digging)"=lightgreen
+MENUCOLOR=" wand (of|called) (fire|cold|lightning|sleep)"=green
+MENUCOLOR=" wand (of|called) (secret door|create monster|enlighten)"=lightcyan
+MENUCOLOR=" wand (of|called) nothing"=brown
+
+# Scrolls
+MENUCOLOR=" scrolls? .* genocide"=lightmagenta
+MENUCOLOR=" cursed scrolls? .* genocide"=lightmagenta&underline
+MENUCOLOR=" scrolls? .* enchant (armor|weapon)"=magenta
+MENUCOLOR=" cursed scrolls? .* enchant (armor|weapon)"=magenta&underline
+MENUCOLOR=" scrolls? .* teleport"=lightgreen
+MENUCOLOR=" cursed scrolls? .* teleport"=lightgreen&underline
+MENUCOLOR=" scrolls? .* remove curse"=green
+MENUCOLOR=" cursed scrolls? .* remove curse"=green&underline
+MENUCOLOR=" scrolls? .* identify"=green
+MENUCOLOR=" cursed scrolls? .* identify"=green&underline
+
+MENUCOLOR="scrolls? .* scare monster"=lightcyan
+MENUCOLOR="scrolls? .* magic mapping"=lightcyan
+MENUCOLOR="scrolls? .* gold detection"=lightcyan
+MENUCOLOR="scrolls? .* taming"=lightcyan
+MENUCOLOR="scrolls? .* charging"=lightcyan
+
+MENUCOLOR=" unlabeled scroll"=white
+MENUCOLOR=" plain spellbook"=white
+MENUCOLOR=" blank paper"=white
+MENUCOLOR=" blessed unlabeled scroll"=lightcyan
+MENUCOLOR=" blessed plain spellbook"=lightcyan
+MENUCOLOR=" blessed .* blank paper"=lightcyan
+MENUCOLOR=" cursed unlabeled scroll"=orange
+MENUCOLOR=" cursed plain spellbook"=orange
+MENUCOLOR=" cursed .* blank paper"=orange
+
+# Potions
+MENUCOLOR=" potions? .* (gain ability|enlightenment)"=magenta
+MENUCOLOR=" potions? .* healing"=green
+MENUCOLOR=" potions? .* full healing"=lightgreen
+MENUCOLOR=" potions? .* gain (level|energy)"=lightcyan
+MENUCOLOR=" potions? .* speed"=lightcyan
+MENUCOLOR=" (smoky potion|potions? .* smoky)"=magenta
+MENUCOLOR=" blessed (smoky potion|potions? .* smoky)"=lightmagenta
+#MENUCOLOR=" potions? .* (conf|hallu|blind)"=brown
+MENUCOLOR=" potions? .* acid"=brown
+
+MENUCOLOR=" clear potion"=white
+MENUCOLOR=" potions? .* water"=white
+MENUCOLOR=" blessed clear potion"=lightcyan
+MENUCOLOR=" blessed potions? .* water"=lightcyan
+MENUCOLOR=" holy water"=lightcyan
+MENUCOLOR=" cursed clear potion"=orange
+MENUCOLOR=" cursed potions? .* water"=orange
+MENUCOLOR=" unholy water"=orange
+
+# Rocks 'n stuff
+MENUCOLOR=" (luckstone|stones? .* luck|Heart of Ahriman)"=lightgreen
+MENUCOLOR=" cursed (luckstone|stones? .* luck|Heart of Ahriman)"=lightgreen&underline
+MENUCOLOR=" (touchstone|stones? .* touch)"=lightcyan
+MENUCOLOR=" worthless"=black
+MENUCOLOR=" (loadstone|stones? called load)"=orange
+
+# Junk
+MENUCOLOR=" amulet.*(change|restful|strang)"=black
+MENUCOLOR=" cheap plastic"=black
+MENUCOLOR=" (scimitar|club|aklys|morning star|flail|nunchaku)"=black
+MENUCOLOR=" (grappling hook|war hammer|partisan|fauchard|glaive)"=black
+MENUCOLOR=" (naginata|bec-de-c|spetum|lucern|guisarme|ranseur)"=black
+MENUCOLOR=" (voulge|bill-guis|bardiche|halberd|javelin)"=black
+MENUCOLOR=" (bullwhip|rubber hose)"=black
+MENUCOLOR=" (leather jacket|(ring|chain|plate) mail|tanko)"=black
+MENUCOLOR="[^n] scale mail"=black
+MENUCOLOR=" (mummy wrapping|coarse mantelet|orcish cloak)"=black
+MENUCOLOR=" (fedora|dunce cap|booze|fruit juice)"=black
+MENUCOLOR=" potion.*(see inv|sick|conf|hallu|restore abil)"=black
+MENUCOLOR=" potion.*(sleep|blind|invis|detect|acid|paralys)"=black
+MENUCOLOR=" scroll.*(conf|destroy|fire|food det|amn|puni|cloud)"=black
+MENUCOLOR=" wand.*(nothing|lock|open|slow mon)"=black
+MENUCOLOR=" ring.*(adorn|hunger|shape|steal|sust|aggrav)"=black
+MENUCOLOR=" ring.*(gain con|search)| tin opener"=black
+MENUCOLOR=" spellbook.*(turn und|detect food|confuse mon|slow)"=black
+MENUCOLOR=" spellbook.*(cause fear|jumping|haste self|invis)"=black
+MENUCOLOR=" spellbook.*(teleport away|create fam|cure blind)"=black
+MENUCOLOR=" spellbook.*(cure sick|restore abil|dig|knock|lock)"=black
+
+# Artifacts R Us
+MENUCOLOR=" (Orb of Detection|Sceptre of Might|Magic Mirror of Merlin)"=lightgreen
+MENUCOLOR=" (Magicbane|Eyes of the Overworld)"=lightgreen
+MENUCOLOR=" (Orb of Fate|Aethiopica|Yendorian Express)"=lightgreen
+MENUCOLOR=" (Master Key of Thievery|Longbow of Diana)"=lightgreen
+
+MENUCOLOR=" (Bell of Opening|silver bell|[Cc]andelabrum|Book of the Dead|papyrus spellbook)"=yellow
+MENUCOLOR=" Amulet of Yendor"=orange
+MENUCOLOR=" Amulet of Yendor named"=yellow&underline
+
+# Unstashables
+MENUCOLOR=" bag .* holding"=yellow
+MENUCOLOR=" cursed bag .* holding"=yellow&underline
+MENUCOLOR=" (sack|bag).* named cancel"=yellow
+MENUCOLOR=" bag .* tricks( \([0-9]+:[1-9][0-9]*\))?$"=yellow
+MENUCOLOR=" wand .*(cancel|vanish)"=yellow
+# Looting
+MENUCOLOR="is empty. Do what\?"=gray
+MENUCOLOR="Put something into .*"=gray
+MENUCOLOR="Take something out of .*"=gray
+
+# Spellcasting
+MENUCOLOR=" 0%"=white
+MENUCOLOR=" [1-9]%"=yellow
+MENUCOLOR=" [12][0-9]%"=yellow
+MENUCOLOR=" [3-5][0-9]%"=brown
+MENUCOLOR=" [6-8][0-9]%"=orange
+MENUCOLOR=" 9[0-9]%"=red
+MENUCOLOR=" 100%"=red
+MENUCOLOR="(turn und|detect food|confuse mon|slow).*%"=black
+MENUCOLOR="(cause fear|jumping|haste self|invis).*%"=black
+MENUCOLOR="(teleport away|create fam|cure blind).*%"=black
+MENUCOLOR="(cure sick|restore abil|dig|knock|lock).*%"=black
+MENUCOLOR="[a-zA-Z ]+ [0-9]\* +[a-z]+ +[0-9]+%"=green
+
+# Enhance
+MENUCOLOR=" \[(Basic|Skilled|Master)\]$"=green
+MENUCOLOR=" \[(Expert|Grand Master)\]$"=lightgreen
+MENUCOLOR=" martial arts +\[Expert\]$"=green
+MENUCOLOR="^ *[a-z] - +[a-z -]+ +\[(Unskilled|Basic|Skilled|Expert|Master)\]$"=lightmagenta
+
+# MSGTYPE options.
+MSGTYPE=hide "You displaced *"
+MSGTYPE=stop "You are slowing down."
+MSGTYPE=stop "You find it hard to breathe."
+MSGTYPE=stop "You are turning a little *"
+
