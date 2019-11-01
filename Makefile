@@ -1,4 +1,7 @@
-GENERATED_PARTS := parts/C-autopickup.6.g parts/E-msgtype.6.g
+GEN4 :=
+GEN5 :=
+GEN6 := parts/C-autopickup.6.g parts/E-msgtype.6.g
+GENERATED_PARTS := $(GEN4) $(GEN5) $(GEN6)
 RCS := nethack-343.rc nethack-343nao.rc nethack-362.rc
 
 .PHONY: all clean
@@ -16,12 +19,12 @@ parts/E-msgtype.6.g: parts/E-msgtype.5
 	sed '2,$$s/\./\\./g;s/\*/.*/g' $< > $@
 
 # The digits in the part filenames say how to assemble the .rcs:
-nethack-343.rc: parts/*4*
-	cat $< > $@
+nethack-343.rc: parts/*4* $(GEN4)
+	cat $^ > $@
 
-nethack-343nao.rc: parts/*5*
-	cat $< > $@
+nethack-343nao.rc: parts/*5* $(GEN5)
+	cat $^ > $@
 
-nethack-362.rc: parts/*6*
-	cat $< > $@
+nethack-362.rc: parts/*6* $(GEN6)
+	cat $^ > $@
 
