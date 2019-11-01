@@ -1,0 +1,7 @@
+OPTIONS=UTF8graphics
+OPTIONS=monsters:abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTQVWXYZ@6U&;:~m
+MONSTERCOLOR=floating eye:yellow
+MONSTERCOLOR=mind flayer:lightmagenta
+MONSTERCOLOR=master mind flayer:lightmagenta
+MONSTERCOLOR=Elvenking:lightmagenta
+

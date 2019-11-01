@@ -1,0 +1,6 @@
+# MSGTYPE options. (nh343nao, nh360+)
+MSGTYPE=hide "You displaced *"
+MSGTYPE=stop "You are slowing down."
+MSGTYPE=stop "You find it hard to breathe."
+MSGTYPE=stop "You are turning a little *"
+

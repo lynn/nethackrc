@@ -1,0 +1,31 @@
+# Options for both NetHack 3.4.3 and 3.6.2.
+OPTIONS=autodig
+#OPTIONS=autopickup (See autopickup section)
+OPTIONS=!autoquiver
+OPTIONS=boulder:0
+OPTIONS=!cmdassist
+#OPTIONS=DECgraphics
+OPTIONS=color
+OPTIONS=disclose:yi ya nv ng yc
+OPTIONS=fixinv
+OPTIONS=fruit:avocado
+OPTIONS=!help
+OPTIONS=hilite_pet
+#OPTIONS=IBMgraphics
+OPTIONS=!legacy
+OPTIONS=lit_corridor
+OPTIONS=mail
+OPTIONS=msghistory:100
+OPTIONS=msg_window:reversed
+OPTIONS=number_pad:0
+OPTIONS=pickup_burden:U
+#OPTIONS=pickup_types (See autopickup section)
+OPTIONS=runmode:teleport
+OPTIONS=showexp
+OPTIONS=showrace
+OPTIONS=showscore
+OPTIONS=!sparkle
+OPTIONS=suppress_alert:3.4.3
+OPTIONS=time
+OPTIONS=!tombstone
+
