@@ -1,13 +1,15 @@
+# Targets:
+RCS := nethack-343.rc nethack-343nao.rc nethack-362.rc
 GEN4 :=
 GEN5 :=
 GEN6 := parts/C-autopickup.6.g parts/E-msgtype.6.g
 GENERATED_PARTS := $(GEN4) $(GEN5) $(GEN6)
-RCS := nethack-343.rc nethack-343nao.rc nethack-362.rc
+ALL := $(GENERATED_PARTS) $(RCS)
 
 .PHONY: all clean
-all: $(GENERATED_PARTS) $(RCS)
+all: $(ALL)
 clean:
-	rm -f $(GENERATED_PARTS) $(RCS)
+	rm -f $(ALL)
 
 # NetHack 3.6.2 uses regex for autopickup exceptions and MSGTYPE.
 # Our 3.4.3-nao files use glob syntax (? and *).
@@ -27,4 +29,3 @@ nethack-343nao.rc: parts/*5* $(GEN5)
 
 nethack-362.rc: parts/*6* $(GEN6)
 	cat $^ > $@
-
