@@ -1,4 +1,3 @@
-PARTS := parts/*
 GENERATED_PARTS := parts/C-autopickup.6.g parts/E-msgtype.6.g
 RCS := nethack-343.rc nethack-343nao.rc nethack-362.rc
 
@@ -16,12 +15,13 @@ parts/C-autopickup.6.g: parts/C-autopickup.5
 parts/E-msgtype.6.g: parts/E-msgtype.5
 	sed '2,$$s/\./\\./g;s/\*/.*/g' $< > $@
 
-nethack-343.rc: $(PARTS)
-	cat parts/*4* > $@
+# The digits in the part filenames say how to assemble the .rcs:
+nethack-343.rc: parts/*4*
+	cat $< > $@
 
-nethack-343nao.rc: $(PARTS)
-	cat parts/*5* > $@
+nethack-343nao.rc: parts/*5*
+	cat $< > $@
 
-nethack-362.rc: $(PARTS)
-	cat parts/*6* > $@
+nethack-362.rc: parts/*6*
+	cat $< > $@
 
