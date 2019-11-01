@@ -1,0 +1,2 @@
+# nethackrc
+My NetHack configs
