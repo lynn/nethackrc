@@ -1,10 +1,10 @@
 # Targets:
-RCS := nethack-343.rc nethack-343nao.rc nethack-362.rc
-GEN4 :=
-GEN5 :=
-GEN6 := parts/C-autopickup.6.g parts/E-msgtype.6.g
-GENERATED_PARTS := $(GEN4) $(GEN5) $(GEN6)
-ALL := $(GENERATED_PARTS) $(RCS)
+RCS = nethack-343.rc nethack-343nao.rc nethack-362.rc
+GEN4 =
+GEN5 =
+GEN6 = parts/C-autopickup.6.g parts/E-msgtype.6.g
+GENERATED_PARTS = $(GEN4) $(GEN5) $(GEN6)
+ALL = $(GENERATED_PARTS) $(RCS)
 
 .PHONY: all clean
 all: $(ALL)

@@ -33,17 +33,23 @@ OPTIONS=!tombstone
 
 # Autopickup and exceptions.
 OPTIONS=autopickup,pickup_types:$"!?/=
-AUTOPICKUP_EXCEPTION="<*magic lamp*"
+AUTOPICKUP_EXCEPTION="<*Amulet of Yendor named*"
+AUTOPICKUP_EXCEPTION="<*andelabrum*"
+AUTOPICKUP_EXCEPTION="<*athame*"
+AUTOPICKUP_EXCEPTION="<*Bell of Opening*"
+AUTOPICKUP_EXCEPTION="<*Book of the Dead*"
+AUTOPICKUP_EXCEPTION="<*lamp*"
+AUTOPICKUP_EXCEPTION="<*lizard corpse*"
 AUTOPICKUP_EXCEPTION="<*magic marker*"
+AUTOPICKUP_EXCEPTION="<*Magicbane*"
+AUTOPICKUP_EXCEPTION="<*papyrus spellbook*"
+AUTOPICKUP_EXCEPTION="<*silver bell*"
+AUTOPICKUP_EXCEPTION=">*lamp*oil*"
+AUTOPICKUP_EXCEPTION=">*magic marker ?1:??"
 AUTOPICKUP_EXCEPTION=">*magic marker*empty"
 AUTOPICKUP_EXCEPTION=">*magic marker*out"
-AUTOPICKUP_EXCEPTION="<*wishing*"
-AUTOPICKUP_EXCEPTION="<*silver bell*"
-AUTOPICKUP_EXCEPTION="<*Bell of Opening*"
-AUTOPICKUP_EXCEPTION="<*andelabrum*"
-AUTOPICKUP_EXCEPTION="<*Book of the Dead"
-AUTOPICKUP_EXCEPTION="<*papyrus spellbook"
-
+AUTOPICKUP_EXCEPTION=">*oil lamp*"
+AUTOPICKUP_EXCEPTION=">*scare mon*"
 # Visual options.
 OPTIONS=UTF8graphics
 OPTIONS=monsters:abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTQVWXYZ@6U&;:~m
