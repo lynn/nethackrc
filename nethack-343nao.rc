@@ -82,7 +82,6 @@ MENUCOLOR=" called .*\?"=lightblue
 MENUCOLOR=" gray stone"=lightblue&underline
 MENUCOLOR=" (piece of cloth|opera cloak|ornamental cope|tattered cape|conical hat)"=lightblue
 MENUCOLOR=" (plumed|etched|crested|visored) helmet"=lightblue
-#MENUCOLOR=" (old|padded|riding|fencing) gloves"=lightblue
 MENUCOLOR=" (mud|buckled|riding|snow|hiking|combat|jungle) boots"=lightblue
 MENUCOLOR=" (piece of cloth|opera cloak|ornamental cope|tattered cape|conical hat)"=lightblue
 
@@ -132,7 +131,6 @@ MENUCOLOR=" (food |K-|C-|cram )ration"=green
 MENUCOLOR=" (gunyoki|lembas wafer)"=green
 MENUCOLOR=" tripe ration"=lightcyan
 
-#MENUCOLOR=" fortune cookie"=yellow
 MENUCOLOR=" c(hi|o)ckatrice corpse"=yellow
 MENUCOLOR=" tins? of c(hi|o)ckatrice"=yellow
 MENUCOLOR=" cockatrice egg"=yellow
@@ -199,7 +197,6 @@ MENUCOLOR=" potions? .* gain (level|energy)"=lightcyan
 MENUCOLOR=" potions? .* speed"=lightcyan
 MENUCOLOR=" (smoky potion|potions? .* smoky)"=magenta
 MENUCOLOR=" blessed (smoky potion|potions? .* smoky)"=lightmagenta
-#MENUCOLOR=" potions? .* (conf|hallu|blind)"=brown
 MENUCOLOR=" potions? .* acid"=brown
 
 MENUCOLOR=" clear potion"=white
@@ -257,6 +254,7 @@ MENUCOLOR=" cursed bag .* holding"=yellow&underline
 MENUCOLOR=" (sack|bag).* named cancel"=yellow
 MENUCOLOR=" bag .* tricks( \([0-9]+:[1-9][0-9]*\))?$"=yellow
 MENUCOLOR=" wand .*(cancel|vanish)"=yellow
+
 # Looting
 MENUCOLOR="is empty. Do what\?"=gray
 MENUCOLOR="Put something into .*"=gray
