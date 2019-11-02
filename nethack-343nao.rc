@@ -1,19 +1,25 @@
-# This .nethackrc file lives at: https://github.com/lynn/nethackrc
+#====================================================================
+#
+#  This .nethackrc file lives at: https://github.com/lynn/nethackrc
+#
+#====================================================================
 
-# Options for both NetHack 3.4.3 and 3.6.2.
+# Flavor options.
+OPTIONS=catname:Catherine
+OPTIONS=dogname:Doggerel
+OPTIONS=fruit:avocado
+
+# Basic options.
 OPTIONS=autodig
-#OPTIONS=autopickup (See autopickup section)
+OPTIONS=showexp
 OPTIONS=!autoquiver
 OPTIONS=boulder:0
 OPTIONS=!cmdassist
-#OPTIONS=DECgraphics
 OPTIONS=color
 OPTIONS=disclose:yi ya nv ng yc
 OPTIONS=fixinv
-OPTIONS=fruit:avocado
 OPTIONS=!help
 OPTIONS=hilite_pet
-#OPTIONS=IBMgraphics
 OPTIONS=!legacy
 OPTIONS=lit_corridor
 OPTIONS=mail
@@ -21,11 +27,9 @@ OPTIONS=msghistory:100
 OPTIONS=msg_window:reversed
 OPTIONS=number_pad:0
 OPTIONS=pickup_burden:U
-#OPTIONS=pickup_types (See autopickup section)
 OPTIONS=runmode:teleport
-OPTIONS=showexp
 OPTIONS=showrace
-OPTIONS=showscore
+OPTIONS=!showscore
 OPTIONS=!sparkle
 OPTIONS=suppress_alert:3.4.3
 OPTIONS=time
@@ -50,6 +54,7 @@ AUTOPICKUP_EXCEPTION=">*magic marker*empty"
 AUTOPICKUP_EXCEPTION=">*magic marker*out"
 AUTOPICKUP_EXCEPTION=">*oil lamp*"
 AUTOPICKUP_EXCEPTION=">*scare mon*"
+
 # Visual options.
 OPTIONS=UTF8graphics
 OPTIONS=monsters:abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTQVWXYZ@6U&;:~m
