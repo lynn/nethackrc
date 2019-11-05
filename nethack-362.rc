@@ -42,6 +42,7 @@ OPTIONS=paranoid_confirmation:quit die bones attack pray wand-break Were-change 
 # Autopickup and exceptions.
 OPTIONS=autopickup,pickup_types:$"!?/=
 AUTOPICKUP_EXCEPTION="<.*Amulet of Yendor named.*"
+AUTOPICKUP_EXCEPTION=">.*cheap plastic imitation.*"
 AUTOPICKUP_EXCEPTION="<.*andelabrum.*"
 AUTOPICKUP_EXCEPTION="<.*athame.*"
 AUTOPICKUP_EXCEPTION="<.*Bell of Opening.*"
@@ -58,6 +59,21 @@ AUTOPICKUP_EXCEPTION=">.*magic marker.*empty"
 AUTOPICKUP_EXCEPTION=">.*magic marker.*out"
 AUTOPICKUP_EXCEPTION=">.*oil lamp.*"
 AUTOPICKUP_EXCEPTION=">.*scare mon.*"
+AUTOPICKUP_EXCEPTION="<tattered cape"
+AUTOPICKUP_EXCEPTION="<opera cloak"
+AUTOPICKUP_EXCEPTION="<ornamental cope"
+AUTOPICKUP_EXCEPTION="<piece of cloth"
+AUTOPICKUP_EXCEPTION="<old gloves"
+AUTOPICKUP_EXCEPTION="<padded gloves"
+AUTOPICKUP_EXCEPTION="<riding gloves"
+AUTOPICKUP_EXCEPTION="<fencing gloves"
+AUTOPICKUP_EXCEPTION="<combat boots"
+AUTOPICKUP_EXCEPTION="<jungle boots"
+AUTOPICKUP_EXCEPTION="<hiking boots"
+AUTOPICKUP_EXCEPTION="<mud boots"
+AUTOPICKUP_EXCEPTION="<buckled boots"
+AUTOPICKUP_EXCEPTION="<riding boots"
+AUTOPICKUP_EXCEPTION="<snow boots"
 
 # Visual options.
 OPTIONS=symset:DECgraphics
@@ -101,6 +117,7 @@ MENUCOLOR=" cursed"=red
 # Un-ID'd
 MENUCOLOR=" (amulet|ring$|potion|scroll|spellbook|wand|gem|tin$|tins$|bag)"=lightblue
 MENUCOLOR=" (amulet|ring|potion|scroll|spellbook|wand|gem|tin|bag)s? (of|called|versus)"=gray
+MENUCOLOR=" cursed (amulet|ring|spellbook)s? (of|called|versus)"=red
 MENUCOLOR=" cursed.* (tin|bag)"=red
 MENUCOLOR=" small bag"=gray
 MENUCOLOR=" called .+ or "=lightblue
@@ -128,6 +145,7 @@ MENUCOLOR=" magic marker"=lightmagenta
 MENUCOLOR=" (blessed|cursed) magic marker"=lightmagenta&underline
 MENUCOLOR=" magic marker.* \(1:[0-3]\)"=brown
 
+MENUCOLOR=" (tooled horn|harp|bugle|flute)"=lightgreen
 MENUCOLOR=" unicorn horn[^[]*$"=lightgreen
 MENUCOLOR=" cursed.* unicorn horn"=lightgreen&underline
 MENUCOLOR=" (blindfold|towel)"=lightgreen
@@ -227,9 +245,11 @@ MENUCOLOR=" potions? .* acid"=brown
 
 MENUCOLOR=" clear potion"=white
 MENUCOLOR=" potions? .* water"=white
+MENUCOLOR=" (clear potions?|potions? .* water) named [bB]"=lightcyan
 MENUCOLOR=" blessed clear potion"=lightcyan
 MENUCOLOR=" blessed potions? .* water"=lightcyan
 MENUCOLOR=" holy water"=lightcyan
+MENUCOLOR=" (clear potions?|potions? .* water) named [cC]"=orange
 MENUCOLOR=" cursed clear potion"=orange
 MENUCOLOR=" cursed potions? .* water"=orange
 MENUCOLOR=" unholy water"=orange
