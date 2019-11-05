@@ -1,11 +1,11 @@
 # Flavor options.
-OPTIONS=catname:Catherine
-OPTIONS=dogname:Doggerel
+OPTIONS=catname:Thelonious
+OPTIONS=dogname:Herbie
+OPTIONS=horsename:Django
 OPTIONS=fruit:avocado
 
 # Basic options.
 OPTIONS=autodig
-OPTIONS=showexp
 OPTIONS=!autoquiver
 OPTIONS=boulder:0
 OPTIONS=!cmdassist
@@ -17,11 +17,12 @@ OPTIONS=hilite_pet
 OPTIONS=!legacy
 OPTIONS=lit_corridor
 OPTIONS=mail
-OPTIONS=msghistory:100
 OPTIONS=msg_window:reversed
+OPTIONS=msghistory:100
 OPTIONS=number_pad:0
 OPTIONS=pickup_burden:U
 OPTIONS=runmode:teleport
+OPTIONS=showexp
 OPTIONS=showrace
 OPTIONS=!showscore
 OPTIONS=!sparkle
